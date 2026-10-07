@@ -1,0 +1,126 @@
+h1 {
+  font-size: 50px;
+  font-family: "Yellowtail", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+p {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+/* HEader */
+header {
+  background-color: #8b8b8b33;
+  height: 5rem;
+}
+
+.quicklinks {
+  list-style: none;
+  font-size: 20px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+}
+body {
+  width: 100%;
+  margin: 0;
+}
+main {
+  margin-top: 100px;
+}
+
+.me {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  margin: 1rem;
+  gap: 3rem;
+}
+/* presets */
+
+.meText {
+  border-radius: 20px;
+  background-color: rgb(204, 234, 244);
+  padding: 1rem;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+.portrait {
+  margin-top: 10px;
+  width: 100%;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+.projects {
+  margin-top: 500px;
+}
+
+.projectsTitle {
+  padding-left: 4rem;
+  font-size: 100px;
+  text-shadow: 5px 5px 3px rgba(0, 0, 0, 0.2);
+}
+
+/* PROJECTS */
+.collage {
+  position: relative;
+  /* border: 3px solid red; */
+}
+
+.project {
+  position: absolute;
+  border-color: black;
+  border-width: 5px;
+  border-style: solid;
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.5);
+  border-radius: 10px;
+}
+.project img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.proj1 {
+  width: 27%;
+  left: 40%;
+  top: 0px;
+}
+
+.proj2 {
+  height: 150px;
+  width: 17%;
+  left: 27%;
+  top: 100px;
+}
+
+.proj3 {
+  width: 25%;
+  height: 100px;
+  left: 65%;
+  top: 170px;
+}
+
+.proj4 {
+  width: 40%;
+  height: 200px;
+  left: 15%;
+  top: 230px;
+}
+
+.proj5 {
+  width: 30%;
+  left: 50%;
+  top: 300px;
+}
+
+.Skills {
+    margin-top: 800px;
+
+}
+.sectionsTitle {
+  padding-left: 4rem;
+  font-size: 100px;
+  text-shadow: 5px 5px 3px rgba(0, 0, 0, 0.2);
+}

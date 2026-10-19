@@ -3,6 +3,7 @@ html {
   scroll-padding-top: 8rem;
 }
 .cover {
+  margin-bottom: 400px;
 }
 .signature {
   font-size: 100px;
@@ -250,7 +251,7 @@ main {
   header {
     display: none;
   }
-  
+
   .signature {
     padding-left: 20px;
     font-size: 80px;
@@ -305,6 +306,26 @@ main {
     opacity: 100%;
     filter: none;
   }
+  /* body::before,
+  body::after {
+    content: "";
+    position: fixed;
+    width: 100%;
+    height: 25vh;
+  }
+  body::before {
+    top: 0;
+    background: linear-gradient(
+      to bottom,
+      rgba(31, 177, 207, 0.18),
+      transparent
+    );
+    filter: url("#noise");
+  } */
+  /* body::after {
+    bottom: 0;
+    background: linear-gradient(to top, rgba(31, 177, 207, 0.18), transparent);
+  } */
 }
 /* header {
   display: none !important;

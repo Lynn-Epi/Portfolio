@@ -255,10 +255,14 @@ main {
     display: none;
   }
 
+  .cover {
+    display: flex;
+    flex-direction: column;
+  }
   .coverLogo {
     display: flex;
     justify-content: center;
-    margin-top: 1vh;
+    order: 1;
   }
 
   .coverLogo img {
@@ -268,7 +272,16 @@ main {
   .signature {
     padding-left: 20px;
     font-size: 80px;
+    order: 4;
   }
+
+  .coverTxt {
+    order: 2;
+  }
+  .coverTxt2 {
+    order: 3;
+  }
+
   .me {
     grid-template-columns: 1fr;
     gap: 1rem;

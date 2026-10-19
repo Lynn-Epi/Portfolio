@@ -2,6 +2,9 @@ html {
   scroll-behavior: smooth;
   scroll-padding-top: 8rem;
 }
+.coverLogo {
+  display: none;
+}
 .cover {
   margin-bottom: 400px;
 }
@@ -252,6 +255,16 @@ main {
     display: none;
   }
 
+  .coverLogo {
+    display: flex;
+    justify-content: center;
+    margin-top: 1vh;
+  }
+
+  .coverLogo img {
+    width: 65%;
+    height: auto;
+  }
   .signature {
     padding-left: 20px;
     font-size: 80px;

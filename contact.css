@@ -2,8 +2,41 @@ body {
   background-color: rgba(61, 78, 82, 0.18);
 }
 main {
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
+  padding: 0 20px;
+}
+body > h2 {
+  font-family: "League Spartan", sans-serif;
+  font-size: 48px;
+  text-align: center;
+  margin: 50px 0 10px;
+}
+
+body > p {
+  text-align: center;
+  margin: 0;
+}
+
+.contactForm {
+  width: 100%;
+  max-width: 700px;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 30px;
+
+  background-color: white;
+  border: 2px solid black;
+  border-radius: 16px;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15);
+
+  font-family: "Poppins", sans-serif;
+  font-size: 25px;
+  font-weight: 900;
+
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  gap: 10px;
 }
 header {
   display: flex;
@@ -11,24 +44,40 @@ header {
   align-items: center;
 }
 
-.contactForm {
-  padding: 20px;
-  border-style: solid;
-  border-width: 10px;
-  border-color: black;
-  align-self: center;
-  width: 700px;
-  background-color: white;
-  margin: 35px;
-  font-family: "Poppins", sans-serif;
-  font-weight: 900px;
-  font-size: 25px;
-  display: grid;
-}
 .red {
   background-color: white;
   border-color: black;
 }
 .headerLogo {
   width: 80px;
+}
+.mobileBack {
+  display: none;
+}
+
+@media (max-width: 600px) {
+  main {
+    padding: 0 16px;
+    margin-top: 30px;
+  }
+
+  .contactForm {
+    padding: 20px;
+    font-size: 18px;
+  }
+
+  body > h2 {
+    font-size: 34px;
+  }
+
+  .contactForm input,
+  .contactForm textarea {
+    width: 100%;
+    box-sizing: border-box;
+  }
+  .mobileBack {
+    display: block;
+    width: fit-content;
+    margin: 30px auto;
+  }
 }

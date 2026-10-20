@@ -249,10 +249,21 @@ main {
   font-weight: 600;
   text-decoration: none;
 }
+.contactButton {
+  padding: 12px 24px;
+  background-color: black;
+  color: white;
+  border-radius: 8px;
+  text-decoration: none;
+}
 
 @media (max-width: 600px) {
   main {
     margin-top: 50px;
+  }
+  .sectionsTitle {
+    padding-left: 1rem;
+    font-size: 70px;
   }
   body::before {
     content: "";
@@ -294,6 +305,7 @@ main {
   }
   .coverTxt2 {
     order: 3;
+    align-self: center;
   }
 
   .me {

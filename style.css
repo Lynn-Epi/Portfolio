@@ -418,6 +418,25 @@ main {
     opacity: 100%;
     filter: none;
   }
+  .me {
+    padding: 0 15px;
+    margin: 0;
+  }
+
+  .me .sectionsTitle {
+    padding-left: 0;
+    margin-left: 0;
+  }
+
+  .last_paragraphIntro {
+    padding: 0 15px;
+  }
+
+  /* Hide Skills cards temporarily */
+  .skillCard {
+    display: none;
+  }
+
   /* body::before,
   body::after {
     content: "";

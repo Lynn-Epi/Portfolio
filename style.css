@@ -67,8 +67,19 @@ main {
   display: grid;
   grid-template-columns: 2fr 1fr;
   margin: 1rem;
-  gap: 3rem;
+  gap: 5rem;
+  padding: 100px;
+  padding-top: 0px;
+  padding-bottom: 0px;
 }
+.me .sectionsTitle {
+  grid-column: 1 / -1;
+}
+.intro {
+  font-size: 25px;
+  padding-bottom: 0;
+}
+
 /* presets */
 
 .portrait {
@@ -210,13 +221,19 @@ main {
 }
 
 .Skills {
-  margin-top: 800px;
+  margin-top: 1200px;
 }
 .sectionsTitle {
   font-family: "League Spartan", sans-serif;
   padding-left: 4rem;
   font-size: 100px;
   text-shadow: 5px 5px 3px rgba(0, 0, 0, 0.2);
+}
+
+.last_paragraphIntro {
+  padding-top: 0;
+  padding-left: 110px;
+  padding-right: 100px;
 }
 
 /* contact */

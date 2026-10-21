@@ -2,6 +2,19 @@ html {
   scroll-behavior: smooth;
   scroll-padding-top: 8rem;
 }
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.headerLogo {
+  width: 75px;
+  height: 75px;
+  object-fit: contain;
+  flex-shrink: 0;
+  padding-right: 750px; 
+  /* fix this later lynn */
+}
 .coverLogo {
   display: none;
 }
@@ -9,11 +22,21 @@ html {
   margin-bottom: 400px;
 }
 .signature {
+  padding-left: 100px;
+  padding-top: 100px;
   font-size: 100px;
   font-family: "Yellowtail", cursive;
   font-weight: 400;
   font-style: normal;
 }
+.coverTxt {
+  padding-left: 150px;
+}
+
+.coverTxt2 {
+  padding-left: 150px;
+}
+
 p {
   font-family: "Poppins", sans-serif;
   font-weight: 400;
@@ -358,17 +381,20 @@ main {
   }
 
   .signature {
+    padding-top: 0;
     padding-left: 20px;
     font-size: 80px;
     order: 4;
   }
 
   .coverTxt {
+    padding: 0;
     order: 2;
     align-self: center;
   }
 
   .coverTxt2 {
+    padding: 0;
     order: 3;
     align-self: center;
   }
@@ -444,7 +470,6 @@ main {
     filter: none;
   }
 
-  /* CHANGED: Learning Journey final paragraph */
   .last_paragraphIntro {
     padding: 0 10px;
     margin-left: 0;
@@ -452,8 +477,29 @@ main {
     box-sizing: border-box;
   }
 
-  /* NEW: Reset the Skills container's desktop offset */
   .Snake {
     right: auto;
   }
+
+  /* body::before,
+  body::after {
+    content: "";
+    position: fixed;
+    width: 100%;
+    height: 25vh;
+  }
+  body::before {
+    top: 0;
+    background: linear-gradient(
+      to bottom,
+      rgba(31, 177, 207, 0.18),
+      transparent
+    );
+    filter: url("#noise");
+  } */
+
+  /* body::after {
+    bottom: 0;
+    background: linear-gradient(to top, rgba(31, 177, 207, 0.18), transparent);
+  } */
 }

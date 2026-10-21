@@ -177,36 +177,36 @@ main {
 }
 
 .proj1 {
-  width: 27%;
-  left: 40%;
+  width: 17%;
+  left: 44%;
   top: 0px;
 }
 
 .proj2 {
+  width: 12%;
   height: 150px;
-  width: 17%;
-  left: 27%;
-  top: 100px;
+  left: 35%;
+  top: 110px;
 }
 
 .proj3 {
-  width: 25%;
-  height: 100px;
-  left: 65%;
+  width: 16%;
+  height: 140px;
+  left: 60%;
   top: 170px;
 }
 
 .proj4 {
-  width: 40%;
-  height: 200px;
-  left: 15%;
-  top: 230px;
+  width: 28%;
+  height: 250px;
+  left: 25%;
+  top: 245px;
 }
 
 .proj5 {
-  width: 30%;
-  left: 50%;
-  top: 300px;
+  width: 24%;
+  left: 48%;
+  top: 350px;
 }
 
 .Skills {

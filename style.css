@@ -321,10 +321,12 @@ main {
   main {
     margin-top: 50px;
   }
+
   .sectionsTitle {
     padding-left: 1rem;
     font-size: 70px;
   }
+
   body::before {
     content: "";
     position: fixed;
@@ -343,6 +345,7 @@ main {
     display: flex;
     flex-direction: column;
   }
+
   .coverLogo {
     display: flex;
     justify-content: center;
@@ -353,6 +356,7 @@ main {
     width: 60%;
     height: auto;
   }
+
   .signature {
     padding-left: 20px;
     font-size: 80px;
@@ -363,23 +367,41 @@ main {
     order: 2;
     align-self: center;
   }
+
   .coverTxt2 {
     order: 3;
     align-self: center;
   }
 
   .me {
-    grid-template-columns: 1fr;
+    display: grid;
+    grid-template-columns: minmax(0, 1fr);
+    width: 100%;
+    box-sizing: border-box;
+    padding: 0 10px;
+    margin: 0;
     gap: 1rem;
   }
+
+  .meText {
+    width: 100%;
+    min-width: 0;
+  }
+
+  .me .sectionsTitle {
+    padding-left: 0;
+    margin-left: 0;
+  }
+
   .portrait {
     width: 50%;
   }
+
   .portraitDiv {
     text-align: center;
   }
 
-  /* projects */
+  /* PROJECTS  */
   .collage {
     display: flex;
     flex-direction: column;
@@ -395,6 +417,7 @@ main {
     transform: none;
     animation: none;
   }
+
   .project img {
     width: 100%;
     height: 180px;
@@ -411,53 +434,26 @@ main {
     transform: none;
     box-shadow: none;
   }
+
   .project:hover {
     transform: none;
   }
+
   .collage:has(.project:hover) .project:not(:hover) {
     opacity: 100%;
     filter: none;
   }
-  .me {
-    padding: 0 15px;
-    margin: 0;
-  }
 
-  .me .sectionsTitle {
-    padding-left: 0;
-    margin-left: 0;
-  }
-
+  /* CHANGED: Learning Journey final paragraph */
   .last_paragraphIntro {
-    padding: 0 15px;
+    padding: 0 10px;
+    margin-left: 0;
+    margin-right: 0;
+    box-sizing: border-box;
   }
 
-  /* Hide Skills cards temporarily */
-  .skillCard {
-    display: none;
+  /* NEW: Reset the Skills container's desktop offset */
+  .Snake {
+    right: auto;
   }
-
-  /* body::before,
-  body::after {
-    content: "";
-    position: fixed;
-    width: 100%;
-    height: 25vh;
-  }
-  body::before {
-    top: 0;
-    background: linear-gradient(
-      to bottom,
-      rgba(31, 177, 207, 0.18),
-      transparent
-    );
-    filter: url("#noise");
-  } */
-  /* body::after {
-    bottom: 0;
-    background: linear-gradient(to top, rgba(31, 177, 207, 0.18), transparent);
-  } */
 }
-/* header {
-  display: none !important;
-} */

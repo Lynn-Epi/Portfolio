@@ -33,12 +33,14 @@
         action="https://formspree.io/f/xoejopgg"
         method="POST"
       >
-        <label class="formLabel" for="Name">Name:</label>
-        <input type="text" name="name" required />
-        <label class="formLabel" for="Email">Email:</label>
-        <input type="email" name="email" required />
-        <label class="formLabel" for="Message">Message:</label>
-        <textarea name="message" rows="3" required></textarea>
+        <label class="formLabel" for="name">Name:</label>
+        <input type="text" id="name" name="name" required />
+
+        <label class="formLabel" for="email">Email:</label>
+        <input type="email" id="email" name="email" required />
+
+        <label class="formLabel" for="message">Message:</label>
+        <textarea id="message" name="message" rows="3" required></textarea>
         <button type="submit" class="contactButton">Send Message</button>
       </form>
       <a href="index.html" class="contactButton mobileBack">

@@ -79,6 +79,11 @@ main {
   font-size: 25px;
   padding-bottom: 0;
 }
+.cvButton {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
 
 /* presets */
 

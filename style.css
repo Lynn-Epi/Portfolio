@@ -17,7 +17,7 @@ header {
   /* fix this later lynn */
 }
 .coverLogo {
-  /* display: flex; */
+  display: none;
 }
 .cover {
   margin-bottom: 400px;

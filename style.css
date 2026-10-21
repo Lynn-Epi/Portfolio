@@ -8,7 +8,7 @@ header {
   justify-content: space-between;
 }
 .headerLogo {
-  display: none;
+  display: block;
   width: 75px;
   height: 75px;
   object-fit: contain;

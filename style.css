@@ -241,6 +241,43 @@ main {
   padding-right: 100px;
 }
 
+/* skills */
+.Snake {
+  position: relative;
+  height: 450px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  right: 150px;
+}
+
+.skillCard {
+  position: absolute;
+  width: 180px;
+  height: 260px;
+  perspective: 1000px;
+}
+.cardInner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transform-style: preserve-3d;
+  transition: transform 0.7s ease;
+}
+.cardFront,
+.cardBack {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  border-radius: 12px;
+}
+/* learning */
+.learning {
+  margin-top: 800px;
+}
+
 /* contact */
 .contact {
   margin-top: 200px;
@@ -248,6 +285,7 @@ main {
 }
 
 .contactContent {
+  padding-top: 100px;
   text-align: center;
   font-family: "Poppins", sans-serif;
 }

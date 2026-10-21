@@ -8,15 +8,16 @@ header {
   justify-content: space-between;
 }
 .headerLogo {
+  display: none;
   width: 75px;
   height: 75px;
   object-fit: contain;
   flex-shrink: 0;
-  padding-right: 750px; 
+  padding-right: 750px;
   /* fix this later lynn */
 }
 .coverLogo {
-  display: none;
+  /* display: flex; */
 }
 .cover {
   margin-bottom: 400px;

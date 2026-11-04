@@ -96,6 +96,11 @@ main {
   padding-top: 0px;
   padding-bottom: 0px;
 }
+.proPhoto {
+  border-radius: 100px;
+  border-color: black;
+  border-width: 10px;
+}
 .me .sectionsTitle {
   grid-column: 1 / -1;
 }

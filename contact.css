@@ -54,7 +54,9 @@ header {
 .mobileBack {
   display: none;
 }
-
+.mobileNav{
+  display: none;
+}
 @media (max-width: 600px) {
   main {
     flex-direction: column;

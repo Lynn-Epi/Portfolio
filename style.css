@@ -96,14 +96,25 @@ main {
   padding-top: 0px;
   padding-bottom: 0px;
 }
+.coverIntro {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+  padding-right: 100px;
+}
 .proPhoto {
-  border-radius: 100px;
-  border-color: black;
-  border-width: 10px;
+  display: block;
+  width: 250px;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 5px solid black;
 }
 .me .sectionsTitle {
   grid-column: 1 / -1;
 }
+
 .intro {
   font-size: 25px;
   padding-bottom: 0;
@@ -112,6 +123,40 @@ main {
   display: flex;
   justify-content: center;
   margin-top: 20px;
+}
+.softSkills {
+  margin: 50px;
+}
+.softSkill {
+  margin: 40px;
+}
+.softSkillsGrid {
+  padding: 20px;
+  display: grid;
+  grid-template-columns: 1fr 1px 1fr 1px 1fr;
+  gap: 30px;
+  align-items: stretch;
+  text-align: center;
+}
+
+.skillDivider {
+  width: 1px;
+  background: linear-gradient(to bottom, #888 0%, transparent 100%);
+}
+
+.softSkill img {
+  width: 80px;
+  height: 80px;
+  object-fit: contain;
+}
+
+.softSkill h3 {
+  font-family: "League Spartan", sans-serif;
+  font-size: 28px;
+}
+
+.softSkill p {
+  font-size: 16px;
 }
 
 /* presets */

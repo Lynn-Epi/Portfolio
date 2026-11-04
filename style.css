@@ -881,3 +881,8 @@ main {
     padding-bottom: 75px;
   }
 }
+@media (min-width: 601px) {
+  .mobileNav {
+    display: none;
+  }
+}

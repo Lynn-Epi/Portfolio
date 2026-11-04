@@ -378,6 +378,18 @@ main {
   overflow: hidden;
   border-radius: 20px;
 }
+.cardBack p {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 3px;
+}
+
+.cardBack p span {
+  font-size: 22px;
+  letter-spacing: 4px;
+  line-height: 1;
+}
 .skillCard {
   transition: transform 1s ease;
   cursor: pointer;
@@ -389,7 +401,7 @@ main {
 }
 .skillLabel {
   position: absolute;
-  bottom: -30px;
+  bottom: -80px;
   left: 50%;
   transform: translateX(-50%);
   font-family: "Poppins", sans-serif;
@@ -400,9 +412,70 @@ main {
   transition: opacity 0.3s ease;
 }
 
+.Snake .skillCard.selected {
+  transform: translate(0, 0) rotate(0deg);
+  translate: 0 0;
+  z-index: 20;
+}
+.Snake .skillCard.selected .cardInner {
+  transform: rotateY(180deg);
+}
+
+.cardBack {
+  transform: rotateY(180deg);
+  background: #faf6ed;
+}
+.skillCard:first-child .cardBack {
+  gap: 6px;
+  padding: 12px;
+}
+
+.skillCard:first-child .cardBack h2 {
+  font-size: 19px;
+  padding-bottom: 6px;
+}
+
+.skillCard:first-child .cardBack p {
+  font-size: 15px;
+  gap: 0;
+}
+
+.skillCard:first-child .cardBack p span {
+  font-size: 18px;
+  line-height: 1;
+  letter-spacing: 3px;
+}
 .skillLabel.visible {
   opacity: 1;
 }
+
+
+/* Inner part */
+.cardBack {
+  transform: rotateY(180deg);
+  background: #faf6ed;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 18px;
+
+  padding: 25px;
+  text-align: center;
+}
+.cardBack h2 {
+  font-family: "Poppins", sans-serif;
+  font-size: 24px;
+  font-weight: 700;
+  margin: 0;
+  padding-bottom: 15px;
+  border-bottom: 2px solid black;
+  width: 100%;
+}
+
+
+
 /* learning */
 .learning {
   margin-top: 800px;

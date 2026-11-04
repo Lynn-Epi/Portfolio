@@ -11,3 +11,17 @@ cards.forEach((card) => {
     skillLabel.classList.remove("visible");
   });
 });
+
+cards.forEach((card) => {
+  card.addEventListener("click", () => {
+    if (card.classList.contains("selected")) {
+      card.classList.remove("selected");
+    } else {
+      cards.forEach((otherCard) => {
+        otherCard.classList.remove("selected");
+      });
+
+      card.classList.add("selected");
+    }
+  });
+});

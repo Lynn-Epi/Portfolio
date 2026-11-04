@@ -663,12 +663,7 @@ main {
     right: auto;
   }
 
-
-
-
-/* MOBILE SKILLS CAROUSEL */
-
-
+  /* MOBILE SKILLS CAROUSEL */
 
   .Skills {
     margin-top: 100px;
@@ -740,11 +735,29 @@ main {
     margin-top: 100px;
   }
   .portrait {
-
     width: 85%;
 
     height: auto;
-}
+  }
+  .softSkills {
+    margin: 20px;
+    padding-top: 30px;
+  }
+
+  .softSkillsGrid {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    padding: 10px;
+  }
+
+  .softSkill {
+    margin: 0;
+  }
+
+  .skillDivider {
+    display: none;
+  }
 
   /* body::before,
   body::after {
@@ -768,13 +781,12 @@ main {
     background: linear-gradient(to top, rgba(31, 177, 207, 0.18), transparent);
   } */
 
-/* nav */
+  /* nav */
 
-.mobileNav {
-  display: none;
-}
+  .mobileNav {
+    display: none;
+  }
 
-@media (max-width: 600px) {
   .mobileNav {
     display: flex;
     position: fixed;

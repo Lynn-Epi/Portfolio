@@ -527,13 +527,13 @@ main {
   border-radius: 8px;
   text-decoration: none;
 }
-.phoneLinks {
+.mobileNav {
   display: none;
 }
 
 @media (max-width: 600px) {
   @media (max-width: 600px) {
-    .phoneLinks {
+    .mobileNav {
       display: flex;
     }
   }

@@ -22,6 +22,11 @@ header {
 .cover {
   margin-bottom: 400px;
 }
+.smalltext {
+  background-color: #02002d;
+  color: white;
+}
+
 .signature {
   padding-left: 100px;
   padding-top: 100px;
@@ -551,49 +556,49 @@ main {
   }
 
   .cover {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 
-.headerLogo {
-  display: none;
-}
+  .headerLogo {
+    display: none;
+  }
 
-.coverLogo {
-  display: flex;
-  justify-content: center;
-  width: 100%;
-  order: 1;
-}
+  .coverLogo {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    order: 1;
+  }
 
-.coverLogo video {
-  width: 60%;
-  height: auto;
-  object-fit: contain;
-}
+  .coverLogo video {
+    width: 60%;
+    height: auto;
+    object-fit: contain;
+  }
 
-.signature {
-  padding-top: 0;
-  padding-left: 20px;
-  font-size: 80px;
-  order: 4;
-}
+  .signature {
+    padding-top: 0;
+    padding-left: 20px;
+    font-size: 80px;
+    order: 4;
+  }
 
-.coverTxt {
-  padding: 0;
-  order: 2;
-  align-self: center;
-  text-align: center;
-}
+  .coverTxt {
+    padding: 0;
+    order: 2;
+    align-self: center;
+    text-align: center;
+  }
 
-.coverTxt2 {
-  padding: 0;
-  order: 3;
-  align-self: center;
-  text-align: center;
-}
-/* 
+  .coverTxt2 {
+    padding: 0;
+    order: 3;
+    align-self: center;
+    text-align: center;
+  }
+  /* 
   .cover {
     display: flex;
     flex-direction: column;

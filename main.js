@@ -12,8 +12,15 @@ cards.forEach((card) => {
   });
 });
 
+
 cards.forEach((card) => {
   card.addEventListener("click", () => {
+
+    // Mobile uses the carousel instead of clicking to flip
+    if (window.matchMedia("(max-width: 600px)").matches) {
+      return;
+    }
+
     if (card.classList.contains("selected")) {
       card.classList.remove("selected");
     } else {

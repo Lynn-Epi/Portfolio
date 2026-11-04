@@ -449,7 +449,6 @@ main {
   opacity: 1;
 }
 
-
 /* Inner part */
 .cardBack {
   transform: rotateY(180deg);
@@ -473,8 +472,6 @@ main {
   border-bottom: 2px solid black;
   width: 100%;
 }
-
-
 
 /* learning */
 .learning {
@@ -523,6 +520,9 @@ main {
 @media (max-width: 600px) {
   main {
     margin-top: 50px;
+  }
+  .proPhoto {
+    display: none;
   }
 
   .sectionsTitle {
@@ -663,6 +663,89 @@ main {
     right: auto;
   }
 
+
+
+
+/* MOBILE SKILLS CAROUSEL */
+
+
+
+  .Skills {
+    margin-top: 100px;
+  }
+
+  .Snake {
+    display: flex;
+    position: relative;
+    justify-content: flex-start;
+    align-items: center;
+
+    width: 100%;
+    height: 430px;
+
+    overflow-x: auto;
+    overflow-y: hidden;
+
+    scroll-snap-type: x mandatory;
+    scroll-padding-inline: calc((100% - 270px) / 2);
+
+    gap: 20px;
+    padding: 0 calc((100% - 270px) / 2);
+    box-sizing: border-box;
+
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;
+  }
+
+  .Snake::-webkit-scrollbar {
+    display: none;
+  }
+
+  .Snake .skillCard {
+    position: relative;
+    flex: 0 0 270px;
+    width: 270px;
+    height: 390px;
+
+    transform: none;
+    translate: none;
+
+    scroll-snap-align: center;
+    z-index: auto;
+    cursor: default;
+  }
+
+  .Snake .skillCard:nth-child(1),
+  .Snake .skillCard:nth-child(2),
+  .Snake .skillCard:nth-child(3),
+  .Snake .skillCard:nth-child(4) {
+    transform: none;
+  }
+
+  .Snake .skillCard:hover,
+  .Snake .skillCard.selected {
+    transform: none;
+    translate: none;
+    z-index: auto;
+  }
+
+  .Snake .skillCard .cardInner,
+  .Snake .skillCard.selected .cardInner {
+    transform: rotateY(180deg);
+  }
+  .skillLabel {
+    display: none;
+  }
+  .learning {
+    margin-top: 100px;
+  }
+  .portrait {
+
+    width: 85%;
+
+    height: auto;
+}
+
   /* body::before,
   body::after {
     content: "";
@@ -684,4 +767,42 @@ main {
     bottom: 0;
     background: linear-gradient(to top, rgba(31, 177, 207, 0.18), transparent);
   } */
+
+/* nav */
+
+.mobileNav {
+  display: none;
+}
+
+@media (max-width: 600px) {
+  .mobileNav {
+    display: flex;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: #000000;
+    justify-content: space-around;
+    align-items: center;
+    padding: 12px 0;
+    z-index: 1000;
+  }
+
+  .mobileNav a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+    font-family: "Poppins", sans-serif;
+    font-size: 12px;
+    text-decoration: none;
+  }
+
+  .mobileNav a span {
+    font-size: 24px;
+  }
+
+  body {
+    padding-bottom: 75px;
+  }
 }
